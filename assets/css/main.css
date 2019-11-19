@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+/* header */
+.header {
+    background-color: #757575;
+    width: 100%;
+}
+
+#title {
+    font-size: 2em;
+    text-align: center;
+}
