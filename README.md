@@ -1,6 +1,4 @@
-# Tribute-Page
-
-## Create a tribute page using HTML, CSS, and JavaScript
+# Tribute Page - Create a tribute page using HTML, CSS, and JavaScript
 
 - User Story #1: My tribute page should have an element with a corresponding `id="main"`, which contains all other elements.
 
