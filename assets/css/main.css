@@ -3,14 +3,19 @@
 }
 
 /* Container Grid */
+
 #main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px auto 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px auto auto auto 1fr;
     gap: 10px 0px;
+    justify-items: center;
+    background: #757575;
+
 }
 
 /* Header */
+
 .header {
     grid-column: 1/6;
     grid-row: 1/2;
@@ -23,6 +28,7 @@
 }
 
 /* Img-div */
+
 #img-div {
     grid-column: 1/6;
     grid-row: 2;
@@ -40,15 +46,17 @@ figure {
     justify-self: center;
 }
 
-figcaption {
+#img-div figcaption {
     justify-self: center;
 }
 
 /* Info */
+
 .info {
     grid-column: 1/6;
 }
 /*Story */
+
 .story {
     grid-column: 1/6;
     text-align: center;
@@ -57,6 +65,7 @@ figcaption {
 /* Releases */
 
 .releases {
+    grid-column: 1/6;
     text-align: center;
 }
 
@@ -67,15 +76,17 @@ figcaption {
 .coverArt {
     max-width: 100px;
     height: auto;
+    grid-column: 1/2;
 }
 
 /* Social  Media */
-.socialMedia h3 {
-    text-align: center;
+
+.socialMedia li {
+    list-style: none;
+    display: inline;
 }
 
-.social li {
-    display: inline;
-    list-style: none;
-    justify-content: center;
+.socialMedia {
+    grid-column: 1/6;
+    text-align: center;
 }
