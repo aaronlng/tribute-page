@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0px 0px;
+}
+
 /* Container Grid */
 
 #main {
@@ -10,7 +14,6 @@
     grid-template-rows: .25fr 1fr repeat(3, auto);
     gap: 10px 0px;
     background: #757575;
-
 }
 
 /* Header */
@@ -54,6 +57,7 @@ figure {
 .info {
     grid-column: 1/6;
 }
+
 /*Story */
 
 .story {
