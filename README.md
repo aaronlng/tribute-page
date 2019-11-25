@@ -1,5 +1,17 @@
 # Tribute Page - Create a tribute page using HTML, CSS, and JavaScript
 
+![Demo of Site](assets/images/demo.gif)
+
+## Author
+
+### Aaron Long
+
+- [GitHub Profile](https://github.com/aaronlng/)
+
+- Twitter: [@aaronlng](https://twitter.com/aaronlng)
+
+## Guidelines
+
 - User Story #1: My tribute page should have an element with a corresponding `id="main"`, which contains all other elements.
 
 - User Story #2: I should see an element with a corresponding `id="title"`, which contains a string (i.e. text) that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
