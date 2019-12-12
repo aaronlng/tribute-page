@@ -17,13 +17,17 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .25fr 1fr auto;
+    grid-template-areas:
+        "head"
+        "image"
+        "info";
     gap: 10px 0px;
 }
 
 /* Header */
 
 .header {
-    grid-column: 1/2;
+    grid-area: head;
     width: 100%;
     border-bottom: 3px solid var(--mainFont);
 }
@@ -37,8 +41,7 @@ body {
 /* Img-div */
 
 #img-div {
-    grid-column: 1/2;
-    grid-row: 2;
+    grid-area: image;
 }
 
 figure {
@@ -63,6 +66,7 @@ figure {
 /* Info Section */
 
 .info {
+    grid-area: info;
     border-top: 3px solid var(--mainFont);
 }
 
@@ -78,13 +82,16 @@ figure {
 }
 
 /* Releases */
+
 .releases {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto repeat(2, 1fr);
     grid-template-areas:
-        "head head"
-        "album1 album2";
+        "head"
+        "album1"
+        "album2";
+    row-gap: 10px;
     text-align: center;
     color: var(--mainFont);
 }
@@ -140,7 +147,7 @@ figure {
 }
 
 .album {
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
 }
 
@@ -149,18 +156,34 @@ figure {
 }
 
 .coverArt {
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
 }
 
 /* Social  Media */
 
 .socialMedia {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    color: var(--mainFont);
     text-align: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .socialMedia table {
-    margin: 0 auto;
+    font-size: 3em;
+    margin: 0 auto 10px auto;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    color: var(--mainFont);
+}
+
+.social-links:hover {
+    color: rgb(3, 34, 237, 0.5);
 }
 
 @media screen and (min-width: 900px) {
@@ -171,9 +194,27 @@ figure {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr auto;
+        grid-template-areas: 
+            "about releases"
+            "social social";
+    }
+
+    .story {
+        grid-area: about;
+    }
+
+    .releases {
+        grid-area: releases;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        grid-template-areas:
+            "head head"
+            "album1 album2";
+        column-gap: 10px;
     }
 
     .socialMedia {
-        grid-column: 1/3;
+        grid-area: social;
     }
 }
