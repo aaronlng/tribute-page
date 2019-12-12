@@ -73,7 +73,7 @@ figure {
     text-align: center;
 }
 
-.story > p {
+.story>p {
     margin: 10px 20px;
 }
 
@@ -89,11 +89,15 @@ figure {
     color: var(--mainFont);
 }
 
-.releases > h3 {
+.releases>h3 {
     grid-area: head;
     width: 100%;
     align-self: center;
     justify-self: center;
+}
+
+.releases p {
+    color: var(--mainFont);
 }
 
 #fastForward {
@@ -101,6 +105,7 @@ figure {
     justify-self: center;
     align-self: center;
     width: 100%;
+    z-index: 2;
 }
 
 #fastForwardHover {
@@ -108,7 +113,6 @@ figure {
     justify-self: center;
     align-self: center;
     width: 200px;
-    z-index: 2;
 }
 
 #shoulder {
@@ -116,6 +120,7 @@ figure {
     justify-self: center;
     align-self: center;
     width: 100%;
+    z-index: 2;
 }
 
 #shoulderHover {
@@ -123,7 +128,15 @@ figure {
     justify-self: center;
     align-self: center;
     max-width: 200px;
-    z-index: 2;
+}
+
+.albumHover {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 200px;
 }
 
 .album {
@@ -131,16 +144,8 @@ figure {
     height: auto;
 }
 
-.albumHover {
-    height: 203px;
-}
-
-#shoulderHover:hover {
-    background: rgb(255, 255, 255, 0.75);
-}
-
-#fastForwardHover:hover {
-    background: rgb(255, 255, 255, 0.75);
+.album:hover {
+    opacity: 15%;
 }
 
 .coverArt {
