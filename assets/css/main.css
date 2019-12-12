@@ -27,7 +27,7 @@ body {
 /* Header */
 
 .header {
-    area: head;
+    grid-area: head;
     width: 100%;
     border-bottom: 3px solid var(--mainFont);
 }
