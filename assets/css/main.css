@@ -4,6 +4,7 @@
 
 body {
     margin: 0px 0px;
+    background: linear-gradient(200deg, #0322ed, #ed7003, #ed3603)
 }
 
 /* Container Grid */
@@ -13,7 +14,6 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: .25fr 1fr auto;
     gap: 10px 0px;
-    background: #757575;
 }
 
 /* Header */
@@ -89,7 +89,6 @@ figure {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr auto;
-        background: #757575;
     }
 
     .socialMedia {
