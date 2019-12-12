@@ -80,6 +80,7 @@ figure {
 /* Releases */
 .releases {
     text-align: center;
+    color: var(--mainFont);
 }
 
 .coverArt {
