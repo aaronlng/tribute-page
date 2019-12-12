@@ -60,10 +60,21 @@ figure {
     color: var(--mainFont);
 }
 
+/* Info Section */
+
+.info {
+    border-top: 3px solid var(--mainFont);
+}
+
 /*Story */
 
 .story {
+    color: var(--mainFont);
     text-align: center;
+}
+
+.story > p {
+    margin: 10px 20px;
 }
 
 /* Releases */
