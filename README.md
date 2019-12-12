@@ -1,6 +1,6 @@
 # Tribute Page - Create a tribute page using HTML, CSS, and JavaScript
 
-![Demo of Site](assets/images/demo.gif)
+![Demo of Site](assets/images/demoUpdate.gif)
 
 ## Author
 
