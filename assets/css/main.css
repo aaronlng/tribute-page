@@ -79,17 +79,73 @@ figure {
 
 /* Releases */
 .releases {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+        "head head"
+        "album1 album2";
     text-align: center;
     color: var(--mainFont);
 }
 
-.coverArt {
-    max-width: 100px;
+.releases > h3 {
+    grid-area: head;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+#fastForward {
+    grid-area: album1;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+}
+
+#fastForwardHover {
+    grid-area: album1;
+    justify-self: center;
+    align-self: center;
+    width: 200px;
+    z-index: 2;
+}
+
+#shoulder {
+    grid-area: album2;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+}
+
+#shoulderHover {
+    grid-area: album2;
+    justify-self: center;
+    align-self: center;
+    max-width: 200px;
+    z-index: 2;
+}
+
+.album {
+    max-width: 200px;
     height: auto;
 }
 
-.releases table {
-    margin: 0 auto;
+.albumHover {
+    height: 203px;
+}
+
+#shoulderHover:hover {
+    background: rgb(255, 255, 255, 0.75);
+}
+
+#fastForwardHover:hover {
+    background: rgb(255, 255, 255, 0.75);
+}
+
+.coverArt {
+    max-width: 200px;
+    height: auto;
 }
 
 /* Social  Media */
