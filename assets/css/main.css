@@ -1,3 +1,7 @@
+:root {
+    --mainFont: #0322ed;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Barlow', sans-serif;
@@ -21,13 +25,13 @@ body {
 .header {
     grid-column: 1/2;
     width: 100%;
-    border-bottom: 3px solid #0322ed;
+    border-bottom: 3px solid var(--mainFont);
 }
 
 #title {
     font-size: 2.5em;
     text-align: center;
-    color: #0322ed;
+    color: var(--mainFont);
 }
 
 /* Img-div */
@@ -41,6 +45,7 @@ figure {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    margin: 0px 20px 0px 20px;
 }
 
 #image {
@@ -51,6 +56,8 @@ figure {
 
 #img-div figcaption {
     justify-self: center;
+    font-size: .8rem;
+    color: var(--mainFont);
 }
 
 /*Story */
